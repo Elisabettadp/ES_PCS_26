@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wshadow -Wl,--dependency-file=CMakeFiles/eseguibile.dir/link.d CMakeFiles/eseguibile.dir/main.cpp.o -o eseguibile
