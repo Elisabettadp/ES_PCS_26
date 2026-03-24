@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Wl,--dependency-file=CMakeFiles/passo3.dir/link.d CMakeFiles/passo3.dir/passo3_main.cpp.o CMakeFiles/passo3.dir/passo3_functions.cpp.o -o passo3
