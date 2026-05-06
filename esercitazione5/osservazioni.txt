@@ -1,0 +1,18 @@
+Esercitazione 5 - Osservazioni
+
+Dalle misurazioni effettuate su vettori di piccole dimensioni (inferiori a 100 elementi), 
+è emerso che gli algoritmi logaritmici (Quicksort e Mergesort) non sono sempre i più efficienti.
+Attraverso i test condotti su 100 vettori casuali per diverse dimensioni, è stata individuata una soglia critica indicativamente intorno a n = 50.
+Al di sotto di questa soglia, la semplicità dell'Insertionsort permette di superare le prestazioni del Quicksort.
+Sopra questa soglia, il vantaggio asintotico del Quicksort diventa predominante.
+
+È stata quindi implementata una versione ottimizzata del Quicksort che,
+quando la dimensione del vettore scende sotto i 50 elementi,
+interrompe la ricorsione e utilizza l'algoritmo quadratico più veloce per completare l'ordinamento locale, ovvero l'insertion sort.
+
+Dalle implementazioni risulta inoltre che su vettori piccoli, il quicksort_modificato sia più veloce del std::sort, che comunque segue un andamento logaritmico.
+Dalle misure su numeri grandi si osserva invece la netta differenza tra gli algoritmi quadratici (Bubble, Selection, Insertion) e gli algoritmi logaritmici(Merge, Quick).
+
+La differenza tra le modalità Debug e Release è stata significativa per tutti gli algoritmi:  
+In modalità Debug (-DCMAKE_BUILD_TYPE=Debug), i tempi di esecuzione sono sensibilmente più alti a causa dei controlli di sicurezza e della mancanza di ottimizzazioni sul codice.  
+In modalità Release (-DCMAKE_BUILD_TYPE=Release), si osserva un abbassamento dei tempi.
