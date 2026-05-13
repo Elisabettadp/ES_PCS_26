@@ -1,0 +1,25 @@
+Start testing: May 13 08:24 UTC
+----------------------------------------------------------
+1/1 Testing: grafo1
+1/1 Test: grafo1
+Command: "/home/pcsdocker/Data/ES_PCS_26/esercitazione6/build/test_grafo1"
+Directory: /home/pcsdocker/Data/ES_PCS_26/esercitazione6/build
+"grafo1" start time: May 13 08:24 UTC
+Output:
+----------------------------------------------------------
+Test Arco (10, 5): (5, 10)
+Test vicini per il nodo 2 superato.
+Test indicizzazione arco superato: (2, 3) e' l'indice 1.
+Test operatore differenza superato.
+Test costruttore di copia superato.
+
+ tutti i test sono stati superati con successo
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"grafo1" end time: May 13 08:24 UTC
+"grafo1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 13 08:24 UTC
